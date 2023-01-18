@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+from uvicorn import Config, Server
 
 from web_app import api_router
-from uvicorn import Config, Server
 
 if __name__ == '__main__':
     # FastAPI - связующее звено между HTTP - сервером и кодом программиста.
@@ -11,7 +11,7 @@ if __name__ == '__main__':
     config = Config(
         app=app,
         host="localhost",
-        port=8080
+        port=8081
     )
     # Сам сервер. Принимает запрос, парсит аргументы,  заголовки и т.п.,
     # передает в FastAPI.

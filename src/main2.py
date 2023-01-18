@@ -3,7 +3,7 @@ import requests
 # Перед запуском этой программы запустить main.py!
 if __name__ == '__main__':
     HOST = "localhost"
-    PORT = 8080
+    PORT = 8081
 
     inWork = True
     print("Варианты действий: \n"
